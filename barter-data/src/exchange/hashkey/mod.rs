@@ -6,4 +6,23 @@ pub mod channel;
 /// into an exchange [`Connector`] specific market used for generating [`Connector::requests`].
 pub mod market;
 
-// Note: The HashKey struct and Connector implementation will be added in a later task
+/// Defines the [`HashKey`](super::HashKey) WebSocket subscription response type that
+/// validates subscription confirmations.
+pub mod subscription;
+
+use barter_instrument::exchange::ExchangeId;
+use derive_more::Display;
+
+/// [`HashKey`] exchange.
+///
+/// See docs: <https://hashkeyglobal-apidoc.readme.io/reference/websocket-api>
+#[derive(
+    Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash, Debug, Default, Display,
+)]
+pub struct HashKey;
+
+impl HashKey {
+    pub const ID: ExchangeId = ExchangeId::HashKey;
+}
+
+// Note: The Connector implementation will be added in a later task
