@@ -13,6 +13,9 @@ pub mod subscription;
 /// Defines the [`HashKey`](super::HashKey) real-time trade WebSocket message type.
 pub mod trade;
 
+/// Defines the [`HashKey`](super::HashKey) L1 and L2 order book WebSocket message types.
+pub mod book;
+
 use barter_instrument::exchange::ExchangeId;
 use derive_more::Display;
 
