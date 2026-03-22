@@ -10,6 +10,9 @@ pub mod market;
 /// validates subscription confirmations.
 pub mod subscription;
 
+/// Defines the [`HashKey`](super::HashKey) real-time trade WebSocket message type.
+pub mod trade;
+
 use barter_instrument::exchange::ExchangeId;
 use derive_more::Display;
 
