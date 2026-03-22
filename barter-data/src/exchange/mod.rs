@@ -30,6 +30,9 @@ pub mod coinbase;
 /// implementations.
 pub mod gateio;
 
+/// `HashKey` [`Connector`] and [`StreamSelector`] implementations.
+pub mod hashkey;
+
 /// `Kraken` [`Connector`] and [`StreamSelector`] implementations.
 pub mod kraken;
 
